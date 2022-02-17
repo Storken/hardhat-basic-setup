@@ -1,0 +1,32 @@
+{
+  "name": "basic-smart-contract-setup",
+  "version": "1.0.0",
+  "description": "Basic setup for smart contracts",
+  "scripts": {
+    "build": "hardhat compile",
+    "deploy:local": "hardhat run --network localhost scripts/deploy-testnet.js",
+    "local-testnet": "hardhat node",
+    "test:watch": "hardhat watch test",
+    "test": "hardhat test"
+  },
+  "keywords": [],
+  "author": "Crypto & Coffee",
+  "license": "ISC",
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.0.5",
+    "@nomiclabs/hardhat-waffle": "^2.0.2",
+    "@types/chai": "^4.2.22",
+    "@types/mocha": "^9.0.0",
+    "@types/node": "^16.9.6",
+    "chai": "^4.3.4",
+    "ethers": "^5.4.6",
+    "hardhat": "^2.8.3",
+    "hardhat-contract-sizer": "^2.4.0",
+    "hardhat-watcher": "^2.1.1",
+    "ts-node": "^10.2.1",
+    "typescript": "^4.4.3"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.5.0"
+  }
+}
